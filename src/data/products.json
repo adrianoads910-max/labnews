@@ -1,0 +1,291 @@
+{
+  "reagents": [
+    {
+      "id": 1,
+      "name": "Hidróxido de Sódio Micropérolas PA ACS 1000g - Dinâmica",
+      "description": "O Hidróxido de Sódio PA (Soda Cáustica) é uma substância química conhecida pelas micropérolas de alta pureza. Com fórmula molecular NaOH e peso molecular de 40,00, possui massa molar de 39,997 g/mol.",
+      "price": "45,96",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/naoh.png", 
+        "alt": "Embalagem de Hidróxido de Sódio" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    },
+    {
+      "id": 2,
+      "name": "Hidróxido de Potássio Solução 40% (P/V) 1 Litro",
+      "description": "A Solução de Hidróxido de Potássio 40% (P/V) é um reagente químico forte utilizado principalmente em laboratórios para a identificação de fungos em exames micológicos e na revelação da prova de Voges-Proskauer (VP) na microbiologia.",
+      "price": "45,96",
+      "quantity": 5,
+      "expiryDate": "2023-11-30",
+      "image": { 
+        "src": "/koh.png", 
+        "alt": "Embalagem de Hidróxido de Potássio" 
+      },
+      "category": "Categoria 2",
+      "location": "Localização 2"
+    },
+     {
+      "id": 3,
+      "name": "Ácido Clorídrico 25% Solução Aquoso 1 Litro",
+      "description": "A solução de ácido clorídrico a 25% é uma solução aquosa de cloreto de hidrogênio (HCl), com concentração de 25% em volume/volume. É um líquido incolor ou ligeiramente amarelado, com odor forte e pungente",
+      "price": "50,00",
+      "quantity": 5,
+      "expiryDate": "2023-11-30",
+      "image": { 
+        "src": "/hcl.png", 
+        "alt": "Embalagem de Ácido Clorídrico" 
+      },
+      "category": "Categoria 2",
+      "location": "Localização 2"
+    },
+     {
+      "id": 4,
+      "name": "Ácido Sulfúrico Solução 25% – 1 Litro",
+      "description": "Usado para diversas aplicações, como na indústria química, fertilizantes e tratamento de água.",
+      "price": "70,00",
+      "quantity": 5,
+      "expiryDate": "2023-11-30",
+      "image": { 
+        "src": "/h2so4.png", 
+        "alt": "Embalagem de Ácido Sulfúrico" 
+      },
+      "category": "Categoria 2",
+      "location": "Localização 2"
+    },
+     {
+      "id": 5,
+      "name": "Ácido nítrico 65%",
+      "description": "Ácido nítrico 65%: Ficha de dados de segurança do material (FDSM) ou ficha de segurança do material (FSM), certificado de análise (CA) e certificado de qualidade (CQ), dossiês e outros documentos disponíveis.",
+      "price": "268,00",
+      "quantity": 5,
+      "expiryDate": "2023-11-30",
+      "image": { 
+        "src": "/hno3.png", 
+        "alt": "Embalagem de Ácido nítrico" 
+      },
+      "category": "Categoria 2",
+      "location": "Localização 2"
+    },
+     {
+      "id": 6,
+      "name": "Cloreto de Sódio P.A.-A.C.S.",
+      "description": "A compra de Reagentes Analíticos e Matérias-Primas é permitida para Pessoa Jurídica e Pessoa Física, desde que seja professor ou pesquisador que tenha o nº de projeto de pesquisa.",
+      "price": "21,04",
+      "quantity": 5,
+      "expiryDate": "2023-11-30",
+      "image": { 
+        "src": "/nacl.png", 
+        "alt": "Embalagem de Cloreto de Sódio" 
+      },
+      "category": "Categoria 2",
+      "location": "Localização 2"
+    },
+     {
+      "id": 7,
+      "name": "Ácido Cítrico ANIDRO P.A.-A.C.S.",
+      "description": "A compra de Reagentes Analíticos e Matérias-Primas é permitida para Pessoa Jurídica e Pessoa Física, desde que seja professor ou pesquisador que tenha o nº de projeto de pesquisa.",
+      "price": "59,85",
+      "quantity": 5,
+      "expiryDate": "2023-11-30",
+      "image": { 
+        "src": "/citrico.png", 
+        "alt": "Embalagem de Ácido Cítrico" 
+      },
+      "category": "Categoria 2",
+      "location": "Localização 2"
+    },
+     {
+      "id": 8,
+      "name": "Sacarose P.A. (Açúcar)",
+      "description": "A compra de Reagentes Analíticos e Matérias-Primas é permitida para Pessoa Jurídica e Pessoa Física, desde que seja professor ou pesquisador que tenha o nº de projeto de pesquisa.",
+      "price": "22,95",
+      "quantity": 5,
+      "expiryDate": "2023-11-30",
+      "image": { 
+        "src": "/sacarose.png", 
+        "alt": "Embalagem de Sacarose" 
+      },
+      "category": "Categoria 2",
+      "location": "Localização 2"
+    }
+],
+
+"glassworks": [
+    {
+      "id": 101,
+      "name": "Extrator Soxhlet",
+      "description": "Extrator Soxhlet com Junta Fêmea e Macho: Eficiência e Precisão",
+      "price": "373,72",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/soxlhet.png", 
+        "alt": "Extrator Soxhlet" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    }, 
+    {
+    "id": 102,
+      "name": "Bequer Forma Baixa Graduado Griffin",
+      "description": "Bequer Forma Baixa Graduado Griffin, essencial para medições precisas em laboratórios.",
+      "price": "9,72",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/bequer.png", 
+        "alt": "Bequer" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    },
+    {
+    "id": 103,
+      "name": "Erlenmeyer Boca Estreita 1000ml",
+      "description": "Erlenmeyer Boca Estreita utilizados geralmente no armazenamento e homogeneização de soluções, cultivo de organismos e tecidos em processo de titulações.",
+      "price": "36,23",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/erlenmeyer.png", 
+        "alt": "Erlenmeyer" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    },
+    {
+    "id": 104,
+      "name": "Condensador Allihn com Duas Juntas e Oliva de Vidro",
+      "description": "Condensador Allihn com Duas Juntas e Oliva de Vidro: Eficiência e Qualidade em Destilação",
+      "price": "149,04",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/condesador.png", 
+        "alt": "Condensador" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    }
+
+],
+"equipment": [
+    {
+      "id": 201,
+      "name": "Extrator Soxhlet",
+      "description": "Extrator Soxhlet com Junta Fêmea e Macho: Eficiência e Precisão",
+      "price": "373,72",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/soxlhet.png", 
+        "alt": "Extrator Soxhlet" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    }, 
+    {
+    "id": 202,
+      "name": "Bequer Forma Baixa Graduado Griffin",
+      "description": "Bequer Forma Baixa Graduado Griffin, essencial para medições precisas em laboratórios.",
+      "price": "9,72",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/bequer.png", 
+        "alt": "Bequer" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    },
+    {
+    "id": 203,
+      "name": "Erlenmeyer Boca Estreita 1000ml",
+      "description": "Erlenmeyer Boca Estreita utilizados geralmente no armazenamento e homogeneização de soluções, cultivo de organismos e tecidos em processo de titulações.",
+      "price": "36,23",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/erlenmeyer.png", 
+        "alt": "Erlenmeyer" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    },
+    {
+    "id": 204,
+      "name": "Condensador Allihn com Duas Juntas e Oliva de Vidro",
+      "description": "Condensador Allihn com Duas Juntas e Oliva de Vidro: Eficiência e Qualidade em Destilação",
+      "price": "149,04",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/condesador.png", 
+        "alt": "Condensador" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    }],
+
+"software": [
+    {
+      "id": 301,
+      "name": "Extrator Soxhlet",
+      "description": "Extrator Soxhlet com Junta Fêmea e Macho: Eficiência e Precisão",
+      "price": "373,72",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/soxlhet.png", 
+        "alt": "Extrator Soxhlet" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    }, 
+    {
+    "id": 302,
+      "name": "Bequer Forma Baixa Graduado Griffin",
+      "description": "Bequer Forma Baixa Graduado Griffin, essencial para medições precisas em laboratórios.",
+      "price": "9,72",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/bequer.png", 
+        "alt": "Bequer" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    },
+    {
+    "id": 303,
+      "name": "Erlenmeyer Boca Estreita 1000ml",
+      "description": "Erlenmeyer Boca Estreita utilizados geralmente no armazenamento e homogeneização de soluções, cultivo de organismos e tecidos em processo de titulações.",
+      "price": "36,23",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/erlenmeyer.png", 
+        "alt": "Erlenmeyer" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    },
+    {
+    "id": 304,
+      "name": "Condensador Allihn com Duas Juntas e Oliva de Vidro",
+      "description": "Condensador Allihn com Duas Juntas e Oliva de Vidro: Eficiência e Qualidade em Destilação",
+      "price": "149,04",
+      "quantity": 10,
+      "expiryDate": "2025-12-31",
+      "image": { 
+        "src": "/condesador.png", 
+        "alt": "Condensador" 
+      },
+      "category": "Categoria 1",
+      "location": "Localização 1"
+    }
+]}
