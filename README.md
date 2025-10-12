@@ -1,7 +1,3 @@
-Aqui está uma sugestão de **README** para o seu projeto **LabNews** no GitHub. Você pode ajustar conforme evolução, novas funcionalidades ou mudanças de stack 😊
-
----
-
 # LabNews 🚀
 
 Plataforma de catálogo e publicação de notícias científicas e laboratoriais, com foco em reagentes, equipamentos e avanços na área de laboratórios.
