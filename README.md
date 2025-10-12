@@ -89,6 +89,3 @@ Contribuições são bem-vindas! Se você quiser colaborar:
 
 Este projeto está licenciado sob os termos da **MIT License** (ou outra licença de sua escolha).
 
----
-
-Se quiser, posso gerar também uma versão em **Markdown com Badges** (versão, branch principal, licensa) ou até um template de README para projetos similares que você poderá reaproveitar. Você gostaria disso?
