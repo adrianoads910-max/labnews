@@ -4,46 +4,49 @@ import { TextField } from "../../components/TextField"
 import { Button } from "../../components/Button"
 
 export const Footer = () => {
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
-    const [mensagem, setMensagem] = useState("")
 
+    const [email, setEmail] = useState("")
+    
     const handleSubmit = event => {
         event.preventDefault()
-        const dados = { name, email, mensagem }
+        const dados = { email }
         console.log(dados)
     }
 
     return (
-        <footer className="bg-amber-50 brightness-95 text-brand-blue-dark font-bold">
-            <div className="max-w-screen-xl mx-auto p-8">
+        <footer className="bg-amber-50 brightness-95 text-brand-blue-dark font-bold flex justify-center items-center">
+            <div className="max-w-screen-xl mx-auto p-8 w-full"> 
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <div>
-                        <form onSubmit={handleSubmit} className="w-full text-brand-yellow text-2xl">
-                            <h2 className="text-3xl text-center font-semibold mb-6">Deixe um comentário!</h2>
+                    
+                    <div className="flex flex-col items-center">
+                        <form onSubmit={handleSubmit} className="w-full max-w-md text-brand-blue text-2xl">
+                            <h2 className="text-3xl text-center font-semibold mb-6">Cadastre-se para receber notícias e atualizações.</h2>
                             
-                            <TextField label="Nome completo" type="text" name="name" id="name" value={name} onChange={event => setName(event.target.value)} className=" bg-gray-200 text-gray-900"/>
-                            <TextField label="E-mail" type="email" name="email" id="email" value={email} onChange={event => setEmail(event.target.value)} className=" bg-gray-200 text-gray-900"/>
+            
+                            <TextField 
+                                placeholder="Digite seu e-mail" 
+                                type="email" 
+                                name="email" 
+                                id="email" 
+                                value={email} 
+                                onChange={event => setEmail(event.target.value)} 
+                                className="w-full p-3 mb-4 rounded-lg border border-gray-300 text-gray-900"
+                            />
+                            <button 
+                                type="submit" 
+                                className="w-full bg-brand-blue text-amber-50 font-bold py-3 px-4 rounded-lg hover:bg-brand-gray hover:text-brand-blue transition duration-300 shadow-md"
+                            >
+                                Cadastrar
+                            </button>
                             
-                            <fieldset className="flex flex-col gap-2 mb-4">
-                                <label htmlFor="message">Mensagem</label>
-                                <textarea
-                                    className="border rounded-lg p-2 h-32 resize-none bg-gray-200 text-gray-900" 
-                                    id="message"
-                                    value={mensagem}
-                                    onChange={event => setMensagem(event.target.value)}
-                                />
-                            </fieldset>
-                            
-                            <Button variant="primary">Enviar</Button>
                         </form>
                     </div>
 
-                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left gap-8">
+                    <div className="flex flex-col lg:items-start text-center lg:text-left gap-8 justify-center items-center">
                         <picture className="max-w-[180px]">
-                            <img src="./logo.jpeg" alt="logo goldfit"/>
-                            <p className="p-2">🔍 Indique um ponto</p>
+                            <img src="./logo-labnews.png" alt="logo goldfit" className="justify-center items-center"/>
+                            <p className="p-2">📍 Seja um franqueado</p>
                         </picture>
                         
                         <div className="flex flex-col gap-4">
