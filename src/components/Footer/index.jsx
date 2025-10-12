@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import { TextField } from "../../components/TextField"
-import { Button } from "../../components/Button"
+import { Instagram, Facebook, Twitter, Mail, MapPin, PhoneCall } from "lucide-react"; 
+
 
 export const Footer = () => {
 
@@ -31,34 +32,39 @@ export const Footer = () => {
                                 id="email" 
                                 value={email} 
                                 onChange={event => setEmail(event.target.value)} 
-                                className="w-full p-3 mb-4 rounded-lg border border-gray-300 text-gray-900"
+                                className="w-full p-3 mb-4 rounded-lg border border-brand-blue-dark bg-brand-white text-gray-900"
                             />
                             <button 
                                 type="submit" 
-                                className="w-full bg-brand-blue text-amber-50 font-bold py-3 px-4 rounded-lg hover:bg-brand-gray hover:text-brand-blue transition duration-300 shadow-md"
-                            >
-                                Cadastrar
-                            </button>
+                                className="w-full bg-brand-blue text-amber-50 font-bold py-3 px-4 rounded-lg hover:bg-brand-gray hover:text-brand-blue transition duration-300 shadow-md"> Cadastrar </button>
                             
                         </form>
                     </div>
 
-                    <div className="flex flex-col lg:items-start text-center lg:text-left gap-8 justify-center items-center">
+                     <div className="flex flex-col gap-8 justify-center items-center"> 
                         <picture className="max-w-[180px]">
                             <img src="./logo-labnews.png" alt="logo goldfit" className="justify-center items-center"/>
-                            <p className="p-2">📍 Seja um franqueado</p>
+                            <p className="p-2 flex items-center gap-2 justify-center"><MapPin size={20} /> Seja um franqueado</p>
                         </picture>
                         
                         <div className="flex flex-col gap-4">
-                            <p className="text-2xl font-semibold">📩 Email: xxxx@gmail.com</p>
-                            <p className="text-2xl font-semibold">🟢 Whatsapp: (98) 98832-5686</p>
+                            <p className="text-2xl font-semibold flex items-center gap-2"><Mail size={24} /> Email: xxxx@gmail.com</p>
+                            <p className="text-2xl font-semibold flex items-center gap-2"><PhoneCall size={24} /> Whatsapp: (98) 98832-5686</p>
                         </div>
                         
-                        <div className="flex flex-col md:flex-row gap-6 ">
-                            <a className="text-3xl hover:underline" href="#">Instagram</a>
-                            <a className="text-3xl hover:underline" href="#">Facebook</a>
-                            <a className="text-3xl hover:underline" href="#">Twitter</a>
+                        <div className="flex gap-6 ">
+                            <a className="text-3xl hover:text-brand-blue transition" href="#" aria-label="Acesse nosso Instagram">
+                                <Instagram size={36} />
+                            </a>
+                            <a className="text-3xl hover:text-brand-blue transition" href="#" aria-label="Acesse nosso Facebook">
+                                <Facebook size={36} />
+                            </a>
+                            <a className="text-3xl hover:text-brand-blue transition" href="#" aria-label="Acesse nosso Twitter">
+                                <Twitter size={36} />
+                            </a>
                         </div>
+                    
+
                     </div>
 
                 </div>

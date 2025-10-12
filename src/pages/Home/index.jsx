@@ -1,7 +1,9 @@
+import React, { useState } from 'react';
 import { Navbar } from "../../components/NavBar"
 import { Button } from "../../components/Button"
 import { Footer } from "../../components/Footer"
 import { MapaLaboratorio } from "../../components/Maps"
+
 
 
 const SHOWCASE = [
@@ -44,6 +46,7 @@ const MOSTSALES = [
             alt: "Soxlhet"
         },
         category: "Vidrarias",
+        bgColor: "bg-amber-50",
         text: "Extrator Soxhlet",
         itemPrice: "R$ 750,00"
         
@@ -55,6 +58,7 @@ const MOSTSALES = [
             alt: "Hidroxido de Sodio"
         },
         category: "Reagentes",
+        bgColor: "bg-amber-50",
         text: "Hidróxido de Sódio PA",
         itemPrice: "R$ 120,00"
     },
@@ -64,6 +68,7 @@ const MOSTSALES = [
             alt: "CG-MS"
         },
         category: "Equipamentos",
+        bgColor: "bg-amber-50",
         text: "GC-MS",
         itemPrice: "R$ 750.000,00"
     },
@@ -73,6 +78,7 @@ const MOSTSALES = [
             alt: "softwares cg"
         },
         category: "Softwares",
+        bgColor: "bg-amber-50",
         text: "Chromatography Solution",
         itemPrice: "R$ 1050,00"
     }
@@ -144,41 +150,39 @@ export const HomePage = () => {
                         </div>
                     </section>
              </div>    
-            <section className="flex flex-col lg:flex-row w-full p-8 gap-12 bg-brand-blue-dark">
-                <article className="lg:w-1/2 flex flex-col justify-center items-center">
-                    <h4 className="text-3xl md:text-5xl font-bold text-amber-50 lg:text-left p-6">
-                    Mais Vendidos
-                    </h4>
-                    <p className="text-lg md:text-2xl text-amber-50 lg:text-center p-6">
-                    Transforme seu laboratório ou centro de pesquisa com nossos equipamentos modernos e soluções de alta precisão.
-                    </p>
-                    <div className="p-6">
-                    <Button variant="primary">Confira os mais vendidos</Button>
+          <section className="flex flex-col lg:flex-row w-full p-8 gap-12 bg-brand-blue-dark">
+            <article className="lg:w-1/2 flex flex-col justify-center items-center text-center lg:text-left">
+                <h4 className="text-3xl md:text-5xl font-bold text-amber-50 p-6">Mais Vendidos</h4>
+                <p className="text-lg md:text-2xl text-amber-50 p-6">Transforme seu laboratório ou centro de pesquisa com nossos equipamentos modernos e soluções de alta precisão.</p>
+                <div className="p-6">
+                <Button variant="primary">Confira os mais vendidos</Button>
+                </div>
+            </article>
+
+            <section className="lg:w-1/2 flex justify-center">
+                <picture className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+                {MOSTSALES.map((item) => (
+                    <div key={item.text} className={`flex flex-col justify-between items-center text-center font-bold text-brand-blue-dark bg-amber-50 border border-amber-50 rounded-2xl shadow-lg overflow-hidden hover:bg-brand-blue-dark hover:text-amber-50 transition-all duration-300`}>
+                
+                    <div className="relative overflow-hidden w-full">
+                        <img
+                        src={item.img.src}
+                        alt={item.img.alt}
+                        className="w-full h-56 object-cover transition-transform duration-500 ease-in-out hover:scale-110"/>
                     </div>
-                </article>
 
-                <section className="lg:w-1/2">
-                    <picture className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
-                    {MOSTSALES.map((item) => (
-                        <div key={item.img.src} className="text-neutral-50 p-3">
-                        <div className="relative overflow-hidden group rounded-2xl">
-                            <img
-                            src={item.img.src}
-                            alt={item.img.alt}
-                            className="rounded-2xl w-full h-60 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                            />
-                        </div>
-                        <article className="text-center">
+                    <article className="flex flex-col flex-1 justify-between p-4 w-full">
+                        <p className="text-lg md:text-xl font-extrabold">{item.text}</p>
+                        <p className="text-lg md:text-xl font-semibold mb-4">{item.itemPrice}</p>
 
-                            <p className="text-3xl md:text-xl p-4">{item.text}</p>
-                            <p className="text-3xl md:text-xl p-2">{item.itemPrice}</p>
-                            
-                        </article>
-                        </div>
-                    ))}
-                    </picture>
-                </section>
-                </section>
+                        <button className="w-full py-2 bg-brand-blue-dark hover:bg-amber-50 transition-colors text-amber-50 font-bold hover:text-brand-blue-dark rounded-md"> Comprar</button>
+                    </article>
+                    </div>
+                ))}
+                </picture>
+            </section>
+            </section>
+
             <section className="bg-brand-blue p-10">
                 <section className="flex flex-col lg:flex-row w-full p-8 gap-12">
                     <div className="lg:w-1/2"> 

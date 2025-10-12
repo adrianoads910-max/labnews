@@ -1,56 +1,94 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Search, ShoppingCart, User, Menu } from "lucide-react"; 
 
 export const Navbar = () => {
   
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="bg-amber-50 w-full">
-            <nav className="flex items-center justify-between max-w-screen-xl mx-auto p-4 relative">
-                <div className="flex-1">
-                    <Link to="/">
-                        <img src="./logo-labnews.png" alt="logo labnews" className="h-15 rounded-4xl"/> 
-                    </Link>
+        <header className="bg-amber-50 w-full shadow-md">
+            
+            <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto px-4 py-3 gap-4">
+                
+                <Link to="/" className="flex items-center gap-2">
+                    <img 
+                        src="./logo-labnews.png" 
+                        alt="Logo Labnews" 
+                        className="h-12 w-auto rounded-xl"/>
+                    <span className="text-brand-blue font-extrabold text-2xl hidden sm:block">
+                        LabNews
+                    </span>
+                </Link>
+
+               
+                <div className="flex-1 w-full md:max-w-lg relative order-3 md:order-none">
+                    <input
+                        type="text"
+                        placeholder="Pesquisar produtos..."
+                        className="w-full px-4 py-2 border border-brand-blue-dark rounded-full focus:outline-none focus:ring-2 focus:ring-brand-blue"/> 
+                    <Search className="absolute right-3 top-2.5 text-brand-blue" size={22} />
                 </div>
 
-         
-                <div className="flex md:hidden">
-                   
+                <div className="flex items-center gap-4 order-2 md:order-none">
+                    <button className="relative hover:scale-105 transition-transform">
+                        <ShoppingCart size={26} className="text-brand-blue"/>
+                    </button>
+                    <Link
+                        to="/login"
+                        className="flex items-center gap-1 text-brand-blue font-semibold hover:text-brand-blue-dark"><User size={22} />
+                        Login
+                    </Link>
+                    <Link
+                        to="/signup"
+                        className="px-4 py-2 bg-brand-blue text-amber-50 rounded-full hover:bg-brand-blue-dark font-bold transition">
+                        Cadastro
+                    </Link>
+            
                     <button 
                         onClick={() => setIsMenuOpen(!isMenuOpen)} 
                         type="button" 
-                        className="bg-amber-50 inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-brand-yellow rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600"
+                        className="p-2 md:hidden text-brand-blue hover:bg-gray-200 rounded-lg"
                     >
+                        <Menu size={26} />
                         <span className="sr-only">Abrir menu principal</span>
-                        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
-                        </svg>
                     </button>
                 </div>
+            </div>
 
-                
-                <div className="hidden md:flex flex-1 justify-center">
-                    <ul className="flex flex-row space-x-7">
-                        <li><Link className="text-brand-blue text-2xl font-bold px-4 py-8  transition-colors duration-300 hover:bg-brand-blue hover:text-brand-white" to="/">Home</Link></li>
-                        <li><Link className="text-brand-blue text-2xl font-bold px-4 py-8  transition-colors duration-300 hover:bg-brand-blue hover:text-brand-white" to="/About">Institucional</Link></li>
-                        <li><Link className="text-brand-blue text-2xl font-bold px-4 py-8  transition-colors duration-300 hover:bg-brand-blue hover:text-brand-white" to="/Products">Produtos</Link></li>
-                        <li><Link className="text-brand-blue text-2xl font-bold px-4 py-8  transition-colors duration-300 hover:bg-brand-blue hover:text-brand-white" to="/Contact">Contato</Link></li>
+
+            <nav className="bg-brand-blue-dark shadow-inner shadow-brand-blue-dark/50">
+                <div className="max-w-screen-xl mx-auto">
+                    <ul className="hidden md:flex justify-between text-amber-50 font-bold text-lg"><li>
+                            <Link to="/" className="px-6 py-3 block hover:bg-brand-blue transition">
+                                Home
+                            </Link></li>
+                        <li>
+                            <Link to="/About" className="px-6 py-3 block hover:bg-brand-blue transition">
+                                Institucional
+                            </Link></li>
+                        <li>
+                            <Link to="/Products" className="px-6 py-3 block hover:bg-brand-blue transition">
+                                Produtos
+                            </Link></li>
+                        <li>
+                            <Link to="/Contact" className="px-6 py-3 block hover:bg-brand-blue transition">
+                                Contato
+                            </Link></li>
                     </ul>
                 </div>
-               
-                <div className="bg-amber-50 hidden md:flex flex-1"></div>
-                {isMenuOpen && (
-                    <div className="absolute top-full left-0 w-full bg-amber-50 md:hidden z-50">
-                        <ul className="flex flex-col items-center space-y-4 p-4">
-                            <li><Link onClick={() => setIsMenuOpen(false)} className="text-brand-yellow text-xl font-bold hover:underline" to='/'>Home</Link></li>
-                            <li><Link onClick={() => setIsMenuOpen(false)} className="text-brand-yellow text-xl font-bold hover:underline" to='/About'>Institucional</Link></li>
-                            <li><Link onClick={() => setIsMenuOpen(false)} className="text-brand-yellow text-xl font-bold hover:underline" to='/Products'>Produtos</Link></li>
-                            <li><Link onClick={() => setIsMenuOpen(false)} className="text-brand-yellow text-xl font-bold hover:underline" to='/Contact'>Contato</Link></li>
-                        </ul>
-                    </div>
-                )}
             </nav>
+            
+            {isMenuOpen && (
+                <div className="absolute top-full left-0 w-full bg-brand-blue md:hidden z-40 shadow-xl">
+                    <ul className="flex flex-col items-center space-y-2 p-4">
+                        <li><Link onClick={() => setIsMenuOpen(false)} className="text-amber-50 text-xl font-bold block py-2 hover:bg-brand-blue-dark w-full text-center" to='/'>Home</Link></li>
+                        <li><Link onClick={() => setIsMenuOpen(false)} className="text-amber-50 text-xl font-bold block py-2 hover:bg-brand-blue-dark w-full text-center" to='/About'>Institucional</Link></li>
+                        <li><Link onClick={() => setIsMenuOpen(false)} className="text-amber-50 text-xl font-bold block py-2 hover:bg-brand-blue-dark w-full text-center" to='/Products'>Produtos</Link></li>
+                        <li><Link onClick={() => setIsMenuOpen(false)} className="text-amber-50 text-xl font-bold block py-2 hover:bg-brand-blue-dark w-full text-center" to='/Contact'>Contato</Link></li>
+                    </ul>
+                </div>
+            )}
         </header>
     );
 };

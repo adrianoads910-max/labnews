@@ -107,10 +107,7 @@ export const AboutPage = () => {
         
            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 ">
                 {VALUES.map((item) => (
-                    <section
-                    key={item.title}
-                    className={`flex flex-col items-center text-center text-brand-blue-dark border p-6 rounded-2xl space-y-4 border-amber-50 ${item.bgColor} hover:bg-brand-blue-dark hover:text-amber-50`}
-                    >
+                    <section key={item.title} className={`flex flex-col items-center text-center text-brand-blue-dark border p-6 rounded-2xl space-y-4 border-amber-50 ${item.bgColor} hover:bg-brand-blue-dark hover:text-amber-50`}>
                     <img
                         src={item.img.src}
                         alt={item.img.alt}
