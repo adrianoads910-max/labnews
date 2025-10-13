@@ -8,6 +8,7 @@ export const Signup = () => {
 
             <div>
                 <h1>Tela de Cadastro</h1>
+                <form action=""></form>
             </div>
             <footer>
                 <Footer />
