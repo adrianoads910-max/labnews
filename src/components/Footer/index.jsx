@@ -48,8 +48,8 @@ export const Footer = () => {
                         </picture>
                         
                         <div className="flex flex-col gap-4">
-                            <p className="text-2xl font-semibold flex items-center gap-2"><Mail size={24} /> Email: xxxx@gmail.com</p>
-                            <p className="text-2xl font-semibold flex items-center gap-2"><PhoneCall size={24} /> Whatsapp: (98) 98832-5686</p>
+                            <p className="text-2xl font-semibold flex items-center gap-2"><Mail size={24} /> Email: labware@gmail.com.br</p>
+                            <p className="text-2xl font-semibold flex items-center gap-2"><PhoneCall size={24} /> Whatsapp: (16) 98832-5686</p>
                         </div>
                         
                         <div className="flex gap-6 ">

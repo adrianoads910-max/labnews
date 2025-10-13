@@ -2,22 +2,28 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { HomePage } from "./pages/Home"
 import { AboutPage } from "./pages/About"
 import { Produts } from "./pages/Products"
-import { Contact } from "./pages/Contact"
+import { Login } from "./pages/Login"
+import { Signup } from "./pages/Signup"
+import { Cart } from "./pages/Cart"
+import { CartProvider } from './context/CartContext';
 
 
 const App = () => {
 
   return (
     <>
+    <CartProvider>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/About' element={<AboutPage />} />
           <Route path='/Products' element={<Produts />} />
-          <Route path='/Contact' element={<Contact />} />
+          <Route path='/Login' element={<Login />} />
+          <Route path='Signup' element={<Signup />} />
+          <Route path='Cart' element={<Cart />} />
         </Routes>
       </BrowserRouter>
-
+    </CartProvider>
     </>
   )
 }
