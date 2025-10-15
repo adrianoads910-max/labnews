@@ -1,12 +1,12 @@
 import { Navbar } from "../../components/NavBar"
 import { Footer } from "../../components/Footer"
+import { Target, Lightbulb, Sparkles } from "lucide-react";
 
 
-const VALUES  = [
-    {   img: {
-            src: "./missao.png",
-            alt: "Missão"
-        },
+const VALUES = [
+    {
+       
+        icon: <Target size={48} className="text-brand-blue-light " />, 
         title: 'MISSÃO',
         bgColor: "bg-amber-50",
         items: [
@@ -15,10 +15,8 @@ const VALUES  = [
     
     },
     {
-        img: {
-            src: "./visao.png",
-            alt: "Visão"
-        },
+     
+        icon: <Lightbulb size={48} className="text-brand-blue-light" />, 
         title: 'VISÃO',
         bgColor: "bg-amber-50",
         items: [
@@ -27,10 +25,8 @@ const VALUES  = [
     
     },
     {
-        img: {
-            src: "./valores.png",
-            alt: "Valores"
-        },
+       
+        icon: <Sparkles size={48} className="text-brand-blue-light " />, 
         title: 'VALORES',
         bgColor: "bg-amber-50",
         items: [
@@ -42,7 +38,6 @@ const VALUES  = [
             "Conhecimento: valorizamos a ciência e o desenvolvimento contínuo de nossa equipe e parceiros."
         ],
     }
-
 ]
 
 const GROUP = [
@@ -107,12 +102,10 @@ export const AboutPage = () => {
         
            <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 ">
                 {VALUES.map((item) => (
-                    <section key={item.title} className={`flex flex-col items-center text-center text-brand-blue-dark border p-6 rounded-2xl space-y-4 border-amber-50 ${item.bgColor} hover:bg-brand-blue-dark hover:text-amber-50`}>
-                    <img
-                        src={item.img.src}
-                        alt={item.img.alt}
-                        className="rounded-2xl w-24 h-20 object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
-                    />
+                    <section key={item.title} className={`flex flex-col items-center text-center text-brand-blue-dark border p-6 rounded-2xl space-y-4 border-amber-50 ${item.bgColor}  hover:bg-brand-blue-dark hover:text-amber-50`}>
+                     <div className="mb-4">
+                        {item.icon}
+                    </div>
 
                     <h3 className="text-3xl font-semibold">{item.title}</h3>
 

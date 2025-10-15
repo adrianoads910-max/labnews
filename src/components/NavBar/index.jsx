@@ -65,6 +65,7 @@ export const Navbar = () => {
             <li><Link to="/" className="px-4 py-3 block hover:bg-brand-blue transition"> HOME</Link> </li>
             <li><Link to="/About" className="px-4 py-3 block hover:bg-brand-blue transition">INSTITUCIONAL</Link></li>
             <li><Link to="/Products" className="px-4 py-3 block hover:bg-brand-blue transition">PRODUTOS</Link></li>
+            <li><Link to="/SoftwaresPlans" className="px-4 py-3 block hover:bg-brand-blue transition">PLANOS DE SOFTWARES</Link></li>
           </ul>
         </div>
       </nav>
@@ -75,6 +76,9 @@ export const Navbar = () => {
             <li> <Link onClick={() => setIsMenuOpen(false)} className="text-amber-50 text-xl font-bold block py-2 hover:bg-brand-blue-dark w-full text-center" to="/">HOME</Link> </li>
             <li> <Link onClick={() => setIsMenuOpen(false)} className="text-amber-50 text-xl font-bold block py-2 hover:bg-brand-blue-dark w-full text-center" to="/About">INSTITUCIONAL</Link> </li>
             <li><Link onClick={() => setIsMenuOpen(false)} className="text-amber-50 text-xl font-bold block py-2 hover:bg-brand-blue-dark w-full text-center" to="/Products">PRODUTOS</Link></li>
+            <li><Link onClick={() => setIsMenuOpen(false)} className="text-amber-50 text-xl font-bold block py-2 hover:bg-brand-blue-dark w-full text-center" to="/Products">PLANOS DE SOFTWARES</Link></li>
+            
+
           </ul>
         </div>
       )}

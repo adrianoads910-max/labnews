@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import { Navbar } from "../../components/NavBar"
 import { Button } from "../../components/Button"
 import { Footer } from "../../components/Footer"
@@ -74,13 +75,13 @@ const MOSTSALES = [
     },
     {
         img: {
-            src: "./soft.png",
-            alt: "softwares cg"
+            src: "./koh.png",
+            alt: "Hidróxido de Potássio"
         },
-        category: "Softwares",
+        category: "Reagentes",
         bgColor: "bg-amber-50",
-        text: "Chromatography Solution",
-        itemPrice: "R$ 1050,00"
+        text: "Hidróxido de Potássio Solução 40% (P/V) 1 Litro",
+        itemPrice: "R$ 45,96"
     }
 ]
 
@@ -102,8 +103,10 @@ export const HomePage = () => {
                 <div className="lg:w-1/2 p-4">
                     <h1 className="text-xl md:text-5xl text-center lg:text-left text-amber-50 font-bold p-2">⚗️ Tudo o que seu Laboratório Precisa em um Só Lugar 🔬</h1>
                     <p className="text-xl md:text-xl text-center lg:text-left text-amber-50 p-2">“Oferecemos reagentes, vidrarias, equipamentos e acessórios laboratoriais das melhores marcas, com entrega em todo o Brasil.”</p>
-                    <section className="right-6 sm:right-10 flex justify-center-safe w-[60%] p-6">
-                    <Button variant="primary">Descubra mais</Button>
+                    <section className="right-6 sm:right-10 flex justify-center w-[60%] p-6">
+                        <Button asChild variant="primary">
+                            <Link to="/Products">Descubra mais</Link>
+                        </Button>
                     </section>
                 </div>
             </div>
@@ -155,7 +158,9 @@ export const HomePage = () => {
                 <h4 className="text-3xl md:text-5xl font-bold text-amber-50 p-6">Mais Vendidos</h4>
                 <p className="text-lg md:text-2xl text-amber-50 p-6">Transforme seu laboratório ou centro de pesquisa com nossos equipamentos modernos e soluções de alta precisão.</p>
                 <div className="p-6">
-                <Button variant="primary">Confira os mais vendidos</Button>
+                    <Button asChild variant="primary">
+                        <Link to="/Products">Confira os mais vendidos</Link>
+                    </Button>
                 </div>
             </article>
 

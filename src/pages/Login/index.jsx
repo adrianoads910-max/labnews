@@ -24,7 +24,7 @@ export const Login = () => {
 
       <section className="flex flex-col lg:flex-row items-center justify-center flex-1 px-6 py-10">
       
-        <form onSubmit={handleSubmit}  className="flex flex-col items-center justify-center text-center p-10 lg:p-16 gap-8 bg-brand-blue-dark rounded-2xl shadow-2xl w-full max-w-md lg:max-w-lg shadow-2xl">
+        <form onSubmit={handleSubmit}  className="flex flex-col items-center justify-center text-center p-10 lg:p-16 gap-8 bg-brand-blue-dark rounded-2xl w-full max-w-md lg:max-w-lg shadow-2xl">
           <h1 className="text-2xl lg:text-3xl text-amber-50 font-semibold">
             Digite seu e-mail ou telefone para iniciar sessão
           </h1>
