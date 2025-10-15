@@ -21,8 +21,8 @@ Construída com **React + Vite** no front-end, visando performance e experiênci
 | Camada / Recurso   | Ferramenta / Biblioteca           |
 | ------------------ | --------------------------------- |
 | Front-end          | React / Vite                      |
-| Estilização        | CSS / Tailwind CSS (se aplicável) |
-| Ícones             | Lucide React (em implementação)   |
+| Estilização        | CSS / Tailwind CSS                |
+| Ícones             | Lucide React                      |
 | Controle de versão | Git / GitHub                      |
 
 ---
